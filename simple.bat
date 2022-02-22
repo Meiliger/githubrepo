@@ -1,1 +1,1 @@
-echo "This is simple bat file | %date% | %time%"
+echo "This is my simple bat file | %date% | %time%"
