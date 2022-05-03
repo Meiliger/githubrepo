@@ -1,9 +1,11 @@
 pipeline {
     agent any
     stages {
-			stage('Design') {
+			stage('1-Design') {
 				steps {
-					echo 'Create the World'
+					echo 'Start creating the World'
+					echo 'Creating the World...'
+					echo 'The World created successfully'
             }
 			}
             stage('Coding') {
