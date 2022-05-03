@@ -1,7 +1,13 @@
 pipeline {
-	agent { docker { image 'python:latest' }}
+    agent any
+	
+	environment {
+		PROJECT_NAME = "Neptun"
+		OWNER_NAME = "Andrew"
+	}
+	
     stages {
-			stage('1-Design') {
+			stage('Design') {
 				steps {
 					echo 'Start creating the World'
 					echo 'Creating the World...'
@@ -16,6 +22,8 @@ pipeline {
             stage('Testing') {
 				steps {
 					echo 'Testing the World'
+					ecno 'Hello $(OWNER_NAME)'
+					ecno 'Project name is $(PROJECT_NAME)'
             }
 			}
             stage('Release') {
@@ -26,7 +34,6 @@ pipeline {
             stage('Support') {
 				steps {
 					echo 'Supporting the World'
-					sh "python --version"
             }
         }
     }
