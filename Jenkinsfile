@@ -1,25 +1,27 @@
 pipeline {
     agent any
     stages {
-		stage('Design') {
+			stage('Design') {
 				steps {
 					echo 'Create the World'
             }
-		stage('Coding') {
+			}
+            stage('Coding') {
 				steps {
 					echo 'Coding the World'
             }
-		stage('Testing') {
+			}
+            stage('Testing') {
 				steps {
 					echo 'Testing the World'
             }
 			}
-		stage('Release') {
+            stage('Release') {
 				steps {
 					echo 'Releasing the World'
             }
 			}
-		stage('Support') {
+            stage('Support') {
 				steps {
 					echo 'Supporting the World'
             }
