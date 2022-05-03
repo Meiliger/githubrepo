@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+	agent { docker { image 'python:latest' }}
     stages {
 			stage('1-Design') {
 				steps {
@@ -26,6 +26,7 @@ pipeline {
             stage('Support') {
 				steps {
 					echo 'Supporting the World'
+					sh "python --version"
             }
         }
     }
