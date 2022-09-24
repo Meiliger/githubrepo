@@ -22,8 +22,6 @@ pipeline {
             stage('Testing') {
 				steps {
 					echo 'Testing the World'
-					ecno 'Hello $(OWNER_NAME)'
-					ecno 'Project name is $(PROJECT_NAME)'
             }
 			}
             stage('Release') {
