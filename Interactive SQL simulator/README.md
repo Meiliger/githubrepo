@@ -8,11 +8,24 @@
  
 *4. Display information about all books stored in the warehouse*
 
+<details>
+  <summary>Схема базы данных</summary>
+  
+  ![drawSQL-emploeesDB](https://user-images.githubusercontent.com/83915765/136953203-86a40d2f-3a8c-4e16-955c-34d0e638b6f9.png)
+</details>
+
 ```sql
 SELECT *
 FROM book; 
 ```
 *5. At the end of the year, the price of all books in stock is recalculated and reduced by 30%. Write an SQL query that selects titles, authors, quantities from the book table and calculates new book prices. Name the column with the new price new_price, round the price to 2 decimal places*
+
+<details>
+  <summary>Схема базы данных</summary>
+  
+  ![drawSQL-emploeesDB](https://user-images.githubusercontent.com/83915765/136953203-86a40d2f-3a8c-4e16-955c-34d0e638b6f9.png)
+</details>
+
  ```sql
 SELECT title, author, amount, ROUND((price*0.7),2) AS new_price
 FROM book;
