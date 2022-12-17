@@ -1,4 +1,4 @@
-# SQL HomeWork-2
+# SQL
 
 <details>
   <summary>Схема базы данных</summary>
