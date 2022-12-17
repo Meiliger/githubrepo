@@ -62,7 +62,8 @@ SELECT *
 FROM book; 
 ```
 *5. At the end of the year, the price of all books in stock is recalculated and reduced by 30%. Write an SQL query that selects titles, authors, quantities from the book table and calculates new book prices. Name the column with the new price new_price, round the price to 2 decimal places*
- ```sql
+ ```
+sql
 SELECT title, author, amount, ROUND((price*0.7),2) AS new_price
 FROM book;
 ```
