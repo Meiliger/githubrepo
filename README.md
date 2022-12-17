@@ -11,7 +11,8 @@
   
   ![drawSQL-emploeesDB](https://user-images.githubusercontent.com/83915765/136953203-86a40d2f-3a8c-4e16-955c-34d0e638b6f9.png)
 </details>
-```sql
+```
+sql
 CREATE TABLE book
   (
      book_id INT PRIMARY KEY auto_increment,
@@ -26,7 +27,8 @@ CREATE TABLE book
   
   ![drawSQL-emploeesDB](https://user-images.githubusercontent.com/83915765/136953203-86a40d2f-3a8c-4e16-955c-34d0e638b6f9.png)
 </details>
-```sql
+```
+sql
 INTO book (title, author, price, amount) VALUES ('Мастер и Маргарита', 'Булгаков М.А.', 670.99, 3);
 ```
 *3. Enter the last three records in the book table, the first record has already been added in the previous step:*
@@ -34,7 +36,8 @@ INTO book (title, author, price, amount) VALUES ('Мастер и Маргари
   
   ![drawSQL-emploeesDB](https://user-images.githubusercontent.com/83915765/136953203-86a40d2f-3a8c-4e16-955c-34d0e638b6f9.png)
 </details>
-```sql
+```
+sql
 INSERT INTO book
             (title,
              author,
