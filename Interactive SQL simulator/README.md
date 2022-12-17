@@ -1,12 +1,13 @@
 # SQL
 
-
-*4. Display information about all books stored in the warehouse*
 <details>
   <summary>Схема базы данных</summary>
   
   ![drawSQL-emploeesDB](https://user-images.githubusercontent.com/83915765/136953203-86a40d2f-3a8c-4e16-955c-34d0e638b6f9.png)
-  </details>
+</details>
+ 
+*4. Display information about all books stored in the warehouse*
+
 ```sql
 SELECT *
 FROM book; 
